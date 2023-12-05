@@ -22,9 +22,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build', [
 		'clean:library',
-
 		'shell:buildjs',
-
 		'copy:scss',
 		'copy:scss_plugins',
 		'sass:build',
@@ -50,8 +48,6 @@ module.exports = function(grunt) {
 		'sass:builddocs',
 		'postcss:builddocs',
 	]);
-
-
 
 	/**
 	 * Check generated docs for broken links
