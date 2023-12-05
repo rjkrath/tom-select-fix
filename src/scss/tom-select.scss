@@ -83,8 +83,8 @@ $select-spinner-border-color:					$select-color-border !default;
 @import "../plugins/remove_button/plugin.scss";
 
 :root {
-	--ts-pr-clear-button: 0;
-	--ts-pr-caret: 0;
+	--ts-pr-clear-button: 0rem;
+	--ts-pr-caret: 0rem;
 	--ts-pr-min: .75rem;
 }
 
@@ -103,11 +103,11 @@ $select-spinner-border-color:					$select-color-border !default;
 }
 
 .#{$select-ns}-control:not(.rtl) {
-	padding-right:	math.max( var(--ts-pr-min), calc( var(--ts-pr-clear-button) + var(--ts-pr-caret)) ) !important;
+	padding-right: max( var(--ts-pr-min), calc( var(--ts-pr-clear-button) + var(--ts-pr-caret)) ) !important;
 }
 
 .#{$select-ns}-control.rtl {
-	padding-left:	math.max( var(--ts-pr-min), calc( var(--ts-pr-clear-button) + var(--ts-pr-caret)) ) !important;
+	padding-left:	max( var(--ts-pr-min), calc( var(--ts-pr-clear-button) + var(--ts-pr-caret)) ) !important;
 }
 
 @mixin ts-caret() {
