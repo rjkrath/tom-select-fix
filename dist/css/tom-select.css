@@ -1,5 +1,5 @@
 /**
- * tom-select.css (v2.3.4)
+ * tom-select.css (v2.3.6)
  * Copyright (c) contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -13,20 +13,20 @@
  *
  */
 .ts-control {
-  border: 1px solid #d0d0d0;
-  padding: 8px 8px;
+  border: 0.06rem solid #d0d0d0;
+  padding: 0.5rem 0.5rem;
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 1;
   box-sizing: border-box;
   box-shadow: none;
-  border-radius: 3px;
+  border-radius: 0.19rem;
   display: flex;
   flex-wrap: wrap;
 }
 .ts-wrapper.multi.has-items .ts-control {
-  padding: calc(8px - 2px - 0) 8px calc(8px - 2px - 3px - 0);
+  padding: calc(0.5rem - 0.125rem - 0) 0.5rem calc(0.5rem - 0.125rem - 0.2rem - 0);
 }
 .full .ts-control {
   background-color: #fff;
@@ -43,8 +43,8 @@
 }
 .ts-wrapper.multi .ts-control > div {
   cursor: pointer;
-  margin: 0 3px 3px 0;
-  padding: 2px 6px;
+  margin: 0 0.2rem 0.2rem 0;
+  padding: 0.125rem 0.4rem;
   background: #f2f2f2;
   color: #303030;
   border: 0 solid #d0d0d0;
@@ -85,17 +85,17 @@
   outline: none !important;
 }
 .has-items .ts-control > input {
-  margin: 0 4px !important;
+  margin: 0 0.25rem !important;
 }
 .ts-control.rtl {
   text-align: right;
 }
 .ts-control.rtl.single .ts-control:after {
-  left: 15px;
+  left: 1rem;
   right: auto;
 }
 .ts-control.rtl .ts-control > input {
-  margin: 0 4px 0 -2px !important;
+  margin: 0 0.25rem 0 -0.2rem !important;
 }
 .disabled .ts-control {
   opacity: 0.5;
@@ -113,13 +113,13 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  border: 1px solid #d0d0d0;
+  border: 0.06rem solid #d0d0d0;
   background: #fff;
   margin: 0.25rem 0 0;
   border-top: 0 none;
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 0.19rem 0.19rem;
 }
 .ts-dropdown [data-selectable] {
   cursor: pointer;
@@ -133,7 +133,7 @@
 .ts-dropdown .optgroup-header,
 .ts-dropdown .no-results,
 .ts-dropdown .create {
-  padding: 5px 8px;
+  padding: 0.3rem 0.5rem;
 }
 .ts-dropdown .option, .ts-dropdown [data-disabled], .ts-dropdown [data-disabled] [data-selectable].option {
   cursor: inherit;
@@ -165,7 +165,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 5px 8px;
+  margin: 0.3rem 0.5rem;
 }
 .ts-dropdown .spinner::after {
   content: " ";
@@ -218,14 +218,14 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: calc(8px - 6px);
+  right: calc(0.5rem - 0.4rem);
   margin-right: 0 !important;
   background: transparent !important;
   transition: opacity 0.5s;
   cursor: pointer;
 }
 .plugin-clear_button.form-select .clear-button, .plugin-clear_button.single .clear-button {
-  right: max(var(--ts-pr-caret), 8px);
+  right: max(var(--ts-pr-caret), 0.5rem);
 }
 .plugin-clear_button.focus.has-items .clear-button, .plugin-clear_button:not(.disabled):hover.has-items .clear-button {
   opacity: 1;
@@ -233,14 +233,14 @@
 
 .ts-wrapper .dropdown-header {
   position: relative;
-  padding: 10px 8px;
+  padding: 0.6rem 0.5rem;
   border-bottom: 1px solid #d0d0d0;
   background: color-mix(#fff, #d0d0d0, 85%);
-  border-radius: 3px 3px 0 0;
+  border-radius: 0.19rem 0.19rem 0 0;
 }
 .ts-wrapper .dropdown-header-close {
   position: absolute;
-  right: 8px;
+  right: 0.5rem;
   top: 50%;
   color: #303030;
   opacity: 0.4;
@@ -254,13 +254,13 @@
 
 .plugin-dropdown_input.focus.dropdown-active .ts-control {
   box-shadow: none;
-  border: 1px solid #d0d0d0;
+  border: 0.06rem solid #d0d0d0;
 }
 .plugin-dropdown_input .dropdown-input {
   border: 1px solid #d0d0d0;
   border-width: 0 0 1px;
   display: block;
-  padding: 8px 8px;
+  padding: 0.5rem 0.5rem;
   box-shadow: none;
   width: 100%;
   background: transparent;
@@ -317,7 +317,7 @@
   text-decoration: none;
   vertical-align: middle;
   display: inline-block;
-  padding: 0 6px;
+  padding: 0 0.4rem;
   border-radius: 0 2px 2px 0;
   box-sizing: border-box;
 }
@@ -339,7 +339,7 @@
 }
 .ts-wrapper.plugin-remove_button:not(.rtl) .item .remove {
   border-left: 1px solid #d0d0d0;
-  margin-left: 6px;
+  margin-left: 0.4rem;
 }
 .ts-wrapper.plugin-remove_button:not(.rtl) .item.active .remove {
   border-left-color: #cacaca;
@@ -353,7 +353,7 @@
 }
 .ts-wrapper.plugin-remove_button.rtl .item .remove {
   border-right: 1px solid #d0d0d0;
-  margin-right: 6px;
+  margin-right: 0.4rem;
 }
 .ts-wrapper.plugin-remove_button.rtl .item.active .remove {
   border-right-color: #cacaca;
@@ -390,7 +390,7 @@
   color: #303030;
   font-family: inherit;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 
 .ts-control,

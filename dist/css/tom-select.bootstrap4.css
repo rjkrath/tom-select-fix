@@ -2,7 +2,7 @@
  * Tom Select Bootstrap 4
  */
 /**
- * tom-select.css (v2.3.4)
+ * tom-select.css (v2.3.6)
  * Copyright (c) contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
@@ -88,7 +88,7 @@
   outline: none !important;
 }
 .has-items .ts-control > input {
-  margin: 0 4px !important;
+  margin: 0 0.25rem !important;
 }
 .ts-control.rtl {
   text-align: right;
@@ -98,7 +98,7 @@
   right: auto;
 }
 .ts-control.rtl .ts-control > input {
-  margin: 0 4px 0 -2px !important;
+  margin: 0 0.25rem 0 -0.2rem !important;
 }
 .disabled .ts-control {
   opacity: 0.5;
@@ -116,7 +116,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  border: 1px solid #d0d0d0;
+  border: 0.06rem solid #d0d0d0;
   background: #fff;
   margin: 0.25rem 0 0;
   border-top: 0 none;
